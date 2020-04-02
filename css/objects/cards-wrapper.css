@@ -1,4 +1,4 @@
-.wrap-cards {
+.cards-wrapper {
     /* width: 375px;
    height: 812px; 
    background-color: aquamarine;
@@ -12,6 +12,6 @@
    
 }
 
-.wrap-cards > .memory-card {
+.cards-wrapper > .memory-card {
 margin-bottom: 10px;
 }

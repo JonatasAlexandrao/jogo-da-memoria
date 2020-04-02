@@ -8,3 +8,8 @@ Desafio 22
 
 Desafio 23
 1. criar os eventos de click dos cartoes e retornar uma mensagem no console.(bubble)
+
+Desafio 24
+Só no arquivo do memory.js
+1. converter as function para array function
+2. Transformar as duas functions em uma só
