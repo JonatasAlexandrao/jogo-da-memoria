@@ -11,5 +11,9 @@ Desafio 23
 
 Desafio 24
 Só no arquivo do memory.js
-1. converter as function para array function
+1. converter as function para arrow function
 2. Transformar as duas functions em uma só
+
+Desafio 25
+1. Adicionar os cards que faltam
+2. fazer de alguma forma que os parametros passados possam estar em qualquer ordem

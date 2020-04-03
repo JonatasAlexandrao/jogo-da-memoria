@@ -1,38 +1,15 @@
 
 
-function createMemoryCard() {
-
-    const $memoryCard = `
-    <article class="memory-card">
+const createMemoryCard = (src, alt, nameClass) => 
+    `<article class="memory-card ${nameClass}">
         <img 
             class = 'icon' 
-            src='img/icon-collabcode.png' 
-            alt='Gueio mascote da CollabCode'
+            src= "${src}"
+            alt="${alt}"
             onClick="handleClick()"
         />
     </article>`
 
-    return $memoryCard
 
-}
+const handleClick = () => console.log('clicou!')
 
-function createMemoryCardFront(){
-
-    const $memoryCard = `
-    <article class="memory-card -front">
-        <img 
-            class = 'icon' 
-            src='img/icon-c.png' 
-            alt='Gueio mascote da CollabCode'
-            onClick="handleClick()"
-        />
-    </article>`
-
-    return $memoryCard
-
-}
-
-function handleClick() {
-    console.log('clicou!')
-
-}

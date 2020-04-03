@@ -3,8 +3,10 @@
 const $root = document.querySelector('#root')
 
 const $cardsWrapper = createCardsWrapper()
-const $memoryCard = createMemoryCard()
-const $memoryCardFront = createMemoryCardFront()
+const $memoryCard = createMemoryCard("img/icon-collabcode.png",  "Gueio mascote da CollabCode")
+const $memoryCardFront = createMemoryCard("img/icon-c.png", "Ícone de um livro de C++", "-front")
+
+
 
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard)
 $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCard)
