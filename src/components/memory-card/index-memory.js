@@ -6,9 +6,17 @@
    const $style = document.createElement("style")
 
    $style.textContent = `
+
    .memory-card {
       width: 155px;
       height: 155px;
+      position: relative;
+   }
+
+
+   .memory-card .card {
+      width: 100%;
+      height: 100%;
       background-color: rgb(242, 90, 113);
       border-radius: 30px;
 
@@ -20,18 +28,23 @@
       position: relative;
 
       cursor: pointer;
-
-      /*Desafio 22
-      margin:16px;*/
-
-
+      position: absolute;
    }
-   /*desafio 21*/
-   .memory-card.-front{
+
+   .memory-card.-active .card{
+      display: none;
+   }
+
+   .memory-card.-active .card.-front{
+      display: flex;
+   }
+   
+   .memory-card .card.-front{
       background-color: #fff;
+      display: flex;
    }
-   /*desafio 21*/
-   .memory-card.-front::before {
+   
+   .memory-card .card.-front::before {
       content: "";
       position: absolute;
       width: 95px;
@@ -41,12 +54,12 @@
       border-radius: 50%;
    }
 
-   .memory-card > .icon {   
+   .memory-card .card > .icon {   
       width: 100px;
       height: 100px;
    }
 
-   .memory-card.-front > .icon {
+   .memory-card .card.-front > .icon {
       position: absolute;
       transform: translateY(-12px);
    }
@@ -57,19 +70,45 @@
    
    
    return ({ src, alt, nameClass }) => `
-      <article class="memory-card ${nameClass}">
-         <img 
-               class = 'icon' 
-               src= "${src}"
-               alt="${alt}"
-               onClick="handleClick()"
-         />
-      </article>`
+      <div class="memory-card" onClick="handleClick(this)">
+         <article class="card -front">
+            <img 
+                  class = 'icon' 
+                  src= "${src}"
+                  alt="${alt}"
+            />
+         </article>
+
+         <article class="card">
+            <img 
+                  class = 'icon' 
+                  src= "img/icon-collabcode.png"
+                  alt="Gueio mascote da CollabCode"
+            />
+         </article>
+      </div>`
    
  }
  
+// const handleClick = $component => $component.classList.toggle("-active")
+
+// Desafio 28
+
+const handleClick = function($component){
+   $component.classList.toggle("-active")
 
 
+   const teste = $component.classList.contains("-active")
+   
+   let i
+   
+
+   if($component.classList.contains("-active")){
+      
+      console.log(i)
+   }
+
+} 
 
  
 

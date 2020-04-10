@@ -20,6 +20,7 @@ function createCardsWrapper() {
         justify-content: space-around;
      
         padding-top: 10px;
+        width: 100vw;
         
      }
      

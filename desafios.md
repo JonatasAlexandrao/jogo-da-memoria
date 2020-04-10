@@ -17,3 +17,9 @@ Só no arquivo do memory.js
 Desafio 25
 1. Adicionar os cards que faltam
 2. fazer de alguma forma que os parametros passados possam estar em qualquer ordem
+
+Desafio 27
+3. Quando clicar no cartão trocar para o cartão rosa com o Gueio
+
+Desafio 28
+ao clicar no segundo card 3s depois voltar para o card rosa, não permitir virar mais do que dois cards.
