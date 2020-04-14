@@ -37,7 +37,7 @@ function createCardsWrapper() {
 
         qtdActiveMemoryCard = $cardsWrapper.querySelectorAll(".memory-card.-active").length
 
-        console.log(qtdActiveMemoryCard)
+        //console.log(qtdActiveMemoryCard)
     })
 
 

@@ -31,10 +31,12 @@
       position: absolute;
    }
 
-   .memory-card.-active .card{
+   .memory-card.-active .card,
+   .memory-card.-score .card{
       display: none;
    }
 
+   .memory-card.-active .card.-front,
    .memory-card.-active .card.-front{
       display: flex;
    }
@@ -90,27 +92,50 @@
    
  }
 
+  let score = 0
   const handleClick = $component => {
 
+   if (!$component.classList.contains('-active')){
+
+      if(qtdActiveMemoryCard < 2){
+         $component.classList.toggle("-active")
+      }
+
+      if(qtdActiveMemoryCard == 1){
+
+
+         const $memoryCards = document.querySelectorAll('.memory-card.-active')
+
+         if($memoryCards[0].querySelector('.-front .icon').getAttribute('src') == $memoryCards[1].querySelector('.-front .icon').getAttribute('src')){
+
+            //console.log("igual")
+            score++
+            $memoryCards.forEach($memoryCards => {
+               $memoryCards.classList.add('-score')
+               $memoryCards.classList.remove('-active')
+            })
+            console.log("score: " + score)
+            
+
+         }
+         else {
+            setTimeout(() => {
+               const $activeMemoryCard = document.querySelectorAll(".memory-card.-active")
+            
+               $activeMemoryCard.forEach($memoryCard => {
+                  $memoryCard.classList.remove("-active")
+               })
    
-    if(qtdActiveMemoryCard < 2){
-       $component.classList.toggle("-active")
-    }
+            qtdActiveMemoryCard = 0;
+            }, 1500)
+         }
 
-    if(qtdActiveMemoryCard == 1){
-       setTimeout(() => {
-          const $activeMemoryCard = document.querySelectorAll(".memory-card.-active")
-      
-          $activeMemoryCard.forEach($memoryCard => {
-             $memoryCard.classList.remove("-active")
-          })
+         
 
-       qtdActiveMemoryCard = 0;
-       }, 1500)
+      } 
 
-       
-    } 
-    console.log("esse:" + qtdActiveMemoryCard)
+   }
+    //console.log("esse:" + qtdActiveMemoryCard)
 
   }
 
