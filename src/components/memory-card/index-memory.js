@@ -69,7 +69,7 @@
    
    
    
-   return ({ src, alt, nameClass }) => `
+   return ({ src, alt }) => `
       <div class="memory-card" onClick="handleClick(this)">
          <article class="card -front">
             <img 
@@ -89,27 +89,32 @@
       </div>`
    
  }
- 
-// const handleClick = $component => $component.classList.toggle("-active")
 
-// Desafio 28
+  const handleClick = $component => {
 
-const handleClick = function($component){
-   $component.classList.toggle("-active")
-
-
-   const teste = $component.classList.contains("-active")
    
-   let i
-   
+    if(qtdActiveMemoryCard < 2){
+       $component.classList.toggle("-active")
+    }
 
-   if($component.classList.contains("-active")){
+    if(qtdActiveMemoryCard == 1){
+       setTimeout(() => {
+          const $activeMemoryCard = document.querySelectorAll(".memory-card.-active")
       
-      console.log(i)
-   }
+          $activeMemoryCard.forEach($memoryCard => {
+             $memoryCard.classList.remove("-active")
+          })
 
-} 
+       qtdActiveMemoryCard = 0;
+       }, 1500)
 
+       
+    } 
+    console.log("esse:" + qtdActiveMemoryCard)
+
+  }
+
+ 
  
 
 
