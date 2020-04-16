@@ -6,7 +6,7 @@
    const $cardsWrapper = createCardsWrapper()
    //const $styleMemoryCard = createStyleMemoryCard()
 
-   const createMemoryCard = memoryCard()
+   const createMemoryCard = memoryCard.create()
 
 
    const $memoryCardFrontC = createMemoryCard({
