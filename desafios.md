@@ -23,3 +23,7 @@ Desafio 27
 
 Desafio 28
 ao clicar no segundo card 3s depois voltar para o card rosa, não permitir virar mais do que dois cards.
+
+Desafio 33
+criar um botão de start
+fazer o contador funcionar

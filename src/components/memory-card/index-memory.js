@@ -68,6 +68,7 @@ const memoryCard = (function() {
          position: absolute;
          transform: translateY(-12px);
       }
+      
       `
    
       $head.insertBefore($style, null)
@@ -121,15 +122,15 @@ const memoryCard = (function() {
 
       if($activeMemoryCard[0].querySelector('.-front .icon').getAttribute('src') == $activeMemoryCard[1].querySelector('.-front .icon').getAttribute('src')){
 
-         //console.log("igual")
+         //Atualiza a pontuaçao na tela
          store.score++
+         document.querySelector(".point-bar > .number").textContent = store.score;
+
          $activeMemoryCard.forEach($memoryCard => {
             $memoryCard.classList.add('-score')
             $memoryCard.classList.remove('-active')
          })
-         console.log("score: " + store.score)
-         
-
+         //console.log("score: " + store.score)
       }
       else {
          setTimeout(() => {
