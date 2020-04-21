@@ -6,11 +6,8 @@
    const $cardsWrapper = createCardsWrapper()
    const createMemoryCard = memoryCard.create()
 
-   // //******************************** */
-    const $gameButton = gameButton.render()
-
    const $pointBar = pointBar.create()
-
+   const $layerStart = layerStart.render('Vai')
    
 
    const $memoryCardFrontC = createMemoryCard({
@@ -46,7 +43,10 @@
    $root.insertAdjacentHTML('afterbegin', $pointBar)
    $root.insertAdjacentElement('beforeend', $cardsWrapper)
 
-   $root.insertAdjacentHTML('afterend', $gameButton)
+   $root.insertAdjacentHTML('beforeend', $layerStart)
+
+
+   //$root.insertAdjacentHTML('afterend', $transparencyLayer)
 
 
 })()

@@ -27,3 +27,7 @@ ao clicar no segundo card 3s depois voltar para o card rosa, não permitir virar
 Desafio 33
 criar um botão de start
 fazer o contador funcionar
+
+Desafio 34
+por um elemento atraz do botão start que impede o usuario de jogar.
+por um evento de click no botao start que vai sumir com o botão e o elemento de traz

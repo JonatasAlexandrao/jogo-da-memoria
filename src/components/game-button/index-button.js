@@ -9,26 +9,6 @@ const gameButton = (function() {
 
 
     $style.textContent = `
-    
-      // .btnStart {
-      //   width: 150px;
-      //   height: 40px;
-      //   border-radius: 15px;
-      //   text-transform: uppercase;
-      //   border: 3px solid  #3a4047;
-      //   font-weight: bold;
-    
-      //   position: fixed;
-      //   bottom: 0;
-      //   left: 50%;
-      //   transform: translateY(-50%) //translateX(-50%);
-      //   cursor: pointer;
-      // }
-    
-      // .btnStart:hover {
-      //     background-color: #3a4047;
-      //     color: #fff;
-      // }
 
     .game-button {
       width: 100px;
@@ -48,8 +28,9 @@ const gameButton = (function() {
       position:absolute;
       left: 50%;
       bottom: 20px;
-      transform: translateX(-50%)
+      transform: translateX(-50%);
       
+      z-index: 1;
 
     }
 
@@ -58,8 +39,11 @@ const gameButton = (function() {
       color: #fff;
     }
 
+    /*.game-button.-disappear{
+      display:none;
+    }*/
 
-      `
+    `
 
     $head.insertBefore($style, null)
 
@@ -68,16 +52,30 @@ const gameButton = (function() {
   }
 
 
-  module.render = () => {
+  module.render = content => {
     module._style()
 
     return `
-    <button class="game-button">start</button>
+    <button class="game-button">${content}</button>
     `
   }
 
+  module.handleClick = ($component) => {
+
+    
+
+    // $component.classList.add('-disappear')  
+    // $transparencyLayer.classList.add('-disappear')
+
+    $component.remove()
+    document.querySelector('.transparency-layer').remove()
+    
+
+  }
+
   return {
-    render: module.render
+    render: module.render,
+    handleClick: module.handleClick
   }
 
 
