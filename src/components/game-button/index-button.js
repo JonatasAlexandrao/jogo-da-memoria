@@ -31,7 +31,7 @@ const gameButton = (function() {
       transform: translateX(-50%);
       
       z-index: 1;
-      transition: opacity 200ms linear;
+      transition: opacity 300ms linear, transform 100ms linear;
 
     }
 
@@ -42,6 +42,7 @@ const gameButton = (function() {
 
     .game-button.-disable{
       opacity: 0;
+      transform: translate(-50%, -35%) scale(2);
     }
     `
 

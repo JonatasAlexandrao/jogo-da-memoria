@@ -31,3 +31,16 @@ fazer o contador funcionar
 Desafio 34
 por um elemento atraz do botão start que impede o usuario de jogar.
 por um evento de click no botao start que vai sumir com o botão e o elemento de traz
+
+Desafio 36
+fazer uma animação de aumentar o botao e diminuir usando scale, 2.5... propriedade transforme
+
+Desafio 37
+desenhar no figma o design da tela de login
+desenhar a tela de cadastro
+upar para o zepelin os design
+
+Desafio 38
+criar um botão de sign up sem criar ou componente, usando o mesmo do login.
+Mudar o escrito para cada botão ficar com o seu.
+Alterar a cor somente do botão sign up
