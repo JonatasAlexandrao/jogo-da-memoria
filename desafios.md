@@ -44,3 +44,13 @@ Desafio 38
 criar um botão de sign up sem criar ou componente, usando o mesmo do login.
 Mudar o escrito para cada botão ficar com o seu.
 Alterar a cor somente do botão sign up
+
+Desafio 39
+colocar o icone na tela
+colocar o titulo, pensar se é um objete ou um componente e deixar ele dinamico para poder ser trocado o titulo
+posicionar o logo e o titulo no lugar certo
+
+Desafio 40 
+Subir um pouco o texto dos botoes
+criar o input do email e seu label, fazer de uma forma dinamica que esse label possa ser trocado.
+Fazer separado uma validação do campo email ou retorne no console se aquele email é valido ou não (procurar por REGEX e Expressão regular)
