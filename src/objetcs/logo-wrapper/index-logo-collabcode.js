@@ -11,7 +11,7 @@ const logoWrapper = (function() {
     
       .avatar-wrapper {
         text-align: center;
-        transform: translateY(-15%);
+        transform: translateY(-25%);
       }
 
     `

@@ -54,3 +54,8 @@ Desafio 40
 Subir um pouco o texto dos botoes
 criar o input do email e seu label, fazer de uma forma dinamica que esse label possa ser trocado.
 Fazer separado uma validação do campo email ou retorne no console se aquele email é valido ou não (procurar por REGEX e Expressão regular)
+
+Desafio 41
+Implementar todos os inputs e labels
+Implementar o button do submit (dinamico)
+Instalar a biblioteca 

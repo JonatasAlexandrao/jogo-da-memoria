@@ -8,3 +8,8 @@
 button {
     font-family: inherit;
 }
+
+input {
+    font-family: inherit;
+    border:none;
+}

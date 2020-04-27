@@ -16,14 +16,19 @@ const flatButton = (function(){
         background-color: ${active ? "#f25a70" : "#eae6da"};
         color: ${active ? "#fff" : "#fffcee"};
         font-size: 24px;
-        font-weght: bold;
+        font-weight: bold;
         border: none;
+        box-sizing: border-box;
 
+        padding-top: 60px;
         width: 50%;
         height: 176px;
         text-transform: uppercase;
+        justify-content: center;
+        
+        
+        display:inline-flex;
 
-        float: left;
 
       }
 
@@ -42,9 +47,7 @@ const flatButton = (function(){
     module._id++;
     module._style(active)
 
-    return `
-    <button class="flat-button-${module._id}">${content}</button>
-    `
+    return `<button class="flat-button-${module._id}">${content}</button>`
   }
 
 
