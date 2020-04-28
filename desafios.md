@@ -59,3 +59,6 @@ Desafio 41
 Implementar todos os inputs e labels
 Implementar o button do submit (dinamico)
 Instalar a biblioteca 
+
+Desafio 42
+Colocar um placeholder nos inputs
