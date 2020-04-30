@@ -1,0 +1,26 @@
+{
+  "name": "jogo-da-memoria",
+  "version": "1.0.0",
+  "description": "jogo da memoria collabcode",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonatasAlexandrao/jogo-da-memoria.git"
+  },
+  "keywords": [
+    "jogo",
+    "game"
+  ],
+  "author": "Jônatas J. B. Alexandrão",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/JonatasAlexandrao/jogo-da-memoria/issues"
+  },
+  "homepage": "https://github.com/JonatasAlexandrao/jogo-da-memoria#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
