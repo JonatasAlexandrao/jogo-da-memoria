@@ -32,7 +32,7 @@ const formSignup = (function(){
 
   module._children = () => {
     const $userNameLabel = labelCollabcode.render('Username')
-    const $userNameInput = inputCollabcode.render('text','nome')
+    const $userNameInput = inputCollabcode.render('nome')
 
     const $emailLabel = labelCollabcode.render('E-mail')
     const $emailInput = inputCollabcode.render('email','example@email.com')
