@@ -26,7 +26,7 @@ const inputCollabcode = (function(){
     $head.insertAdjacentElement('beforeend', $style)
   }
 
-  module.render = (type = "text", placeholder = "") => {
+  module.render = (type, placeholder = "") => {
 
     module._style()
 
