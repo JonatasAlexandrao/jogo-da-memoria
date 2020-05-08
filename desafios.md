@@ -62,3 +62,8 @@ Instalar a biblioteca
 
 Desafio 42
 Colocar um placeholder nos inputs
+
+Desafio 43
+mudar os tipos de cada input para o correto
+criar a page login
+montar o visual dessa nova page
