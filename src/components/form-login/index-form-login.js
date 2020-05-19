@@ -12,7 +12,7 @@ const formLogin = (function(){
       }
 
       #root .input-collabcode + .btn-collabcode {
-        margin-top: 170px;
+        // margin-top: 170px;
       }
 
       /*.btnSubmit {
@@ -33,12 +33,28 @@ const formLogin = (function(){
   module._children = () => {
 
     const $userNameLabel = labelCollabcode.render('Username ou e-mail')
-    const $userNameInput = inputCollabcode.render('text','nome')
+    const $userNameInput = inputCollabcode.render({
+      type: 'text',
+      placeholder: 'nome'})
 
     const $passwordLabel = labelCollabcode.render('Password')
-    const $passwordInput = inputCollabcode.render('password','********')
+    const $passwordInput = inputCollabcode.render({
+      id: 'password',
+      type: 'password',
+      placeholder: '8 digite'
+    })
 
-    const $btn = btnCollabcode.render('Login')
+    const $eyeCollabcode = eyeCollabcode.render({attrFor: "password"})
+
+    const $linkCollab = linkCollab.render({
+      href: "",
+      content: "Forget password?"
+    })
+
+    const $btn = btnCollabcode.render({
+      content: 'Login',
+      path: 'game'
+    })
 
     return `
       ${$userNameLabel}
@@ -46,6 +62,9 @@ const formLogin = (function(){
 
       ${$passwordLabel}
       ${$passwordInput}
+      ${$eyeCollabcode}
+
+      ${$linkCollab}
 
       ${$btn}
     `

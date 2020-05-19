@@ -67,3 +67,13 @@ Desafio 43
 mudar os tipos de cada input para o correto
 criar a page login
 montar o visual dessa nova page
+
+Desafio 44
+adicionar o olho da senha e criar sua variação de ativo e desativado
+quando o usuario clicar no olho a senha deve aparecer ou desaparecer conforme o estado dele
+fazer a troca das paginas sign up para o login, login para o jogo
+
+Desafio 45
+fazer funcionar a troca para a pagina de game
+criar uma pagina de erro 404 para urls q não existem
+resolver o bug de quando troca a url não altera a pagina sem um refresh

@@ -39,21 +39,29 @@ const flatButton = (function(){
 
   }
 
+  module.handleClick = (path) => {
+    window.location.hash = `#/${path}`
+    location.reload(true)
+  }
 
 
 
-  module.render = (content, active = false) => {
+  module.render = (content, active = false, path = "") => {
 
     module._id++;
     module._style(active)
 
-    return `<button class="flat-button-${module._id}">${content}</button>`
+    return `<button 
+      class="flat-button-${module._id}" 
+      onClick="flatButton.handleClick('${path}')">
+    ${content}</button>`
   }
 
 
   return {
 
-    render: module.render
+    render: module.render,
+    handleClick: module.handleClick
   }
 
 })()

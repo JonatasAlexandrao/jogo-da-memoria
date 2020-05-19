@@ -1,11 +1,11 @@
 
 
-(function(){
+const signup = (function(){
 
   const $root = document.querySelector('#root')
 
-  const $loginButton = flatButton.render('login')
-  const $signupButton = flatButton.render('sign up', true)
+  const $loginButton = flatButton.render('login', false, "login")
+  const $signupButton = flatButton.render('sign up', true, "signup")
 
   const $logoCollabcode = logoCollabcode.render()
   const $titleCollabcode = titleCollabcode.render('Wellcome!')
@@ -21,4 +21,4 @@
 
   $root.insertAdjacentHTML('beforeend', $formSignup)
 
-})()
+})
