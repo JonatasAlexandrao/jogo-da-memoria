@@ -26,23 +26,32 @@ const btnCollabcode = (function(){
       margin-top: 45px;
     }
 
+    .btn-collabcode.-voltar {
+      border-radius: 0;
+      background-color: grey;
+    }
+
     `
 
     $head.insertAdjacentElement('beforeend', $style)
   }
 
   module.handleClick = (event, path) => {
+
+    validateField.validate()
+    console.log('menos de 8 digitos')
+
     event.preventDefault()
     window.location.hash = `#/${path}`
     location.reload(true)
   }
 
-  module.render = ({content = "", path = ""}) => {
+  module.render = ({content = "", path = "", classe = ""}) => {
 
     module._style()
 
     return `<input 
-      class="btn-collabcode" 
+      class="btn-collabcode ${classe}" 
       type="submit" 
       value=${content}
       onClick="btnCollabcode.handleClick(event, '${path}')">

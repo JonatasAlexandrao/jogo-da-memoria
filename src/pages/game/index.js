@@ -26,6 +26,12 @@ const game = (function() {
       alt: "Ícone de um livro de C++"
    })
 
+   const $btnVoltar = btnCollabcode.render({
+      content : "Voltar", 
+      path : "login", 
+      classe : "-voltar"
+   })
+
 
    $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardFrontJS)
    $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardFrontJava)
@@ -35,6 +41,8 @@ const game = (function() {
    $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardFrontJS)
    $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardFrontC)
    $cardsWrapper.insertAdjacentHTML('beforeend', $memoryCardFrontWoman)
+
+   $cardsWrapper.insertAdjacentHTML('beforeend', $btnVoltar)
 
    /********************************* */
    
@@ -44,6 +52,7 @@ const game = (function() {
 
    $root.insertAdjacentHTML('beforeend', $layerStart)
 
+   document.getElementsByClassName
 
    //$root.insertAdjacentHTML('afterend', $transparencyLayer)
 

@@ -26,21 +26,26 @@ const inputCollabcode = (function(){
     $head.insertAdjacentElement('beforeend', $style)
   }
 
+  module._id = 0
+
   module.render = ({ id = "", placeholder = "", type = "text" }) => {
 
     module._style()
+    module._id++
 
    //const $hiddenPassword = hiddenPassword.render()
    //${type == "password" ? $hiddenPassword : ""}
     return `
       <input 
         id="${id}"
-        class="input-collabcode" 
+        class="input-collabcode -${module._id}" 
         type="${type}"
         placeholder="${placeholder}">   
     `
 
   }
+
+  
 
   return {
     render: module.render

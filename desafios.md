@@ -77,3 +77,14 @@ Desafio 45
 fazer funcionar a troca para a pagina de game
 criar uma pagina de erro 404 para urls q não existem
 resolver o bug de quando troca a url não altera a pagina sem um refresh
+
+Desafio 46
+criar um botão de voltar na tela do jogo.
+
+validar se no campo email foi digitado um email e validar se a senha tem 8 digitos, mostrar uma mensagem em baixo do campo se não for (ela deve ser dispara quando o usuario clicar no botão e se estiver alguma coisa errada não disparar o evento do botão).
+
+Quando está sendo clicado no botão voltar do browser a url volta mas não atualiza a pagina, resolver isso.
+
+
+
+
